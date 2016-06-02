@@ -8,6 +8,8 @@ var piped = arg === '-';
 
 var objectIdHex = piped ? '' : arg;
 
+var rg = /ObjectId\(["']?([0-9a-f]+)["']?\)/i;
+
 if (piped) {
 	process.stdin
 		.on('data', buffer)
@@ -21,5 +23,8 @@ function buffer( data ){
 }
 
 function finish(){
+	if (rg.test(objectIdHex))
+		objectIdHex = objectIdHex.match(rg)[1];
+
 	console.log(dateFromObjectId(objectIdHex));
 }
