@@ -1,7 +1,7 @@
 {
 	"name": "date-from-object-id",
 	"description": "Get the timestamp from a MongoDB type ObjectId",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"bin": "./cli.js",
 	"repository": "srcagency/date-from-object-id",
 	"scripts": {
