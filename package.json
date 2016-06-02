@@ -1,0 +1,15 @@
+{
+	"name": "date-from-object-id",
+	"description": "Get the timestamp from a MongoDB type ObjectId",
+	"version": "0.0.1",
+	"bin": "./cli",
+	"repository": "srcagency/date-from-object-id",
+	"scripts": {
+		"test": "node test"
+	},
+	"devDependencies": {
+		"tape": "^4.0.0"
+	},
+	"license": "MIT",
+	"author": "Thomas Jensen <thomas@src.agency> (http://src.agency)"
+}
